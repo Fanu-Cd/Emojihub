@@ -34,7 +34,7 @@ const Emojis = () => {
   }, []);
 
   const getAllCategories = () => {
-    const emojiapiKey = "";
+    const emojiapiKey = "24e2c24d34bdff2c64ee138e9a3adafd9af71b08";
     const url = `https://emoji-api.com/categories?access_key=${emojiapiKey}`;
     fetch(url)
       .then((res) => res.json())
@@ -45,7 +45,7 @@ const Emojis = () => {
 
   const getEmojis = (name) => {
     setStatus({ ...status, loading: true });
-    const emojiapiKey = "";
+    const emojiapiKey = "24e2c24d34bdff2c64ee138e9a3adafd9af71b08";
     const url =
       name === "All"
         ? `https://emoji-api.com/emojis?access_key=${emojiapiKey}`
